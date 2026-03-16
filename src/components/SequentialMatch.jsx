@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Target, Zap, RotateCcw, User, Clock } from 'lucide-react';
+import { Target,  Clock } from 'lucide-react';
 
 const initializeGame = () => {
   return [1, 2, 3, 4, 5, 6, 7, 8, 9]
