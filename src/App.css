@@ -1,11 +1,26 @@
+/* 1. First, import Tailwind's core styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Then, define your custom 3D utilities */
 @layer utilities {
   .preserve-3d {
     transform-style: preserve-3d;
   }
   .backface-hidden {
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
   .rotate-y-180 {
     transform: rotateY(180deg);
   }
+}
+
+/* 3. Global Styles */
+body {
+  margin: 0;
+  background-color: #050505;
+  color: white;
+  overflow: hidden;
 }
